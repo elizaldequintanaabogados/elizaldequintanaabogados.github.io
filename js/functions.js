@@ -373,8 +373,9 @@
 
 			$.ajax({
 				type: "POST",
-				dataType: "json",
-				url: "contact.php",
+				jsonp: "callback",
+				dataType: "jsonp",
+				url: "https://eqwebmailing.herokuapp.com/web/contact.php",
 				data: mydata,
 				success: function(data) {
 
